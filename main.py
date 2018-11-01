@@ -24,7 +24,7 @@ print(mystery_list)
 
 def check_type(word):
     """Takes user input and checks to make sure it is a letter """
-    if word.isaplpha():
+    if word.isalpha():
         return True
     else:
         return False
@@ -36,7 +36,7 @@ def print_info():
     print(wrong_guesses)
 
 game_loop = True
-#Setup game loop:
+#Setup game loop: ------ GAME LOGIC UNDER WHILE LOOP 
 while game_loop == True:
     #while loop should run until the number of missed guesses = 7 OR the user inputs exit()
     user_guess = input('Please input 1 letter, enter "exit" to quit: ')
